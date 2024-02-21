@@ -1,6 +1,10 @@
 #include <stdio.h>
+
 float suma(float a, float b);
 float resta(float a, float b);
+float multiplicacion(float a, float b);
+float division(float a, float b);
+
 int main()
 {
 	printf("Calculadora\n");
@@ -42,9 +46,13 @@ int main()
 		break;
 	case 3:
 		// Se meanda llamar la funcion multiplicacion
+		resultado = multiplicacion(a, b);
+		printf("El resultado es: %f", resultado);
 		break;
 	case 4:
 		// Se meanda llamar la funcion division
+		resultado = division(a, b);
+		printf("El resultado es: %f", resultado);
 		break;
 	default:
 		printf("Opcion invalida\n");
@@ -63,3 +71,13 @@ int main()
     			return a - b;
 			}
 // Salvador pon el codigo de las funciones multiplicacion, division
+
+float multiplicacion(float a, float b)
+{
+	return a * b;
+}
+
+float division(float a, float b)
+{
+	return a / b;
+}
