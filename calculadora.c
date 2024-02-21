@@ -1,6 +1,7 @@
 #include <stdio.h>
 
-// Prototipo de las funciones
+float suma(float a, float b);
+float resta(float a, float b);
 float multiplicacion(float a, float b);
 float division(float a, float b);
 
@@ -17,25 +18,31 @@ int main()
 	printf("Seleccione una opcion: ");
 	scanf("%d", &opcion);
 
-	if (opcion == 5)
-	{
-		return 0;
-	}
+		if (opcion == 5)
+			{
+				return 0;
+			}
 
 	float a, b;
-	printf("Ingrese el primer numero: ");
-	scanf("%f", &a);
-	printf("Ingrese el segundo numero: ");
-	scanf("%f", &b);
+		printf("Ingrese el primer numero: ");
+			scanf("%f", &a);
+		printf("Ingrese el segundo numero: ");
+			scanf("%f", &b);
 
 	float resultado;
 	switch (opcion)
 	{
 	case 1:
 		// Se meanda llamar la funcion suma
+		resultado=suma(a,b);
+		printf("El resultado es igual a: %f",resultado);
+		
 		break;
 	case 2:
 		// Se meanda llamar la funcion resta
+		resultado=resta(a,b);
+		printf("El resultado es igual a: %f",resultado);
+		
 		break;
 	case 3:
 		// Se meanda llamar la funcion multiplicacion
@@ -51,12 +58,18 @@ int main()
 		printf("Opcion invalida\n");
 		return 1;
 	}
-
 	return 0;
 }
 
 // Sunem pon el codigo de las funciones suma, resta
-
+		float suma(float a, float b)
+			{
+				return a + b;
+			}
+		float resta(float a, float b)
+			{
+    			return a - b;
+			}
 // Salvador pon el codigo de las funciones multiplicacion, division
 
 float multiplicacion(float a, float b)
