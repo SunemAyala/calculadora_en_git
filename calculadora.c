@@ -1,5 +1,6 @@
 #include <stdio.h>
 float suma(float a, float b);
+float resta(float a, float b);
 int main()
 {
 	printf("Calculadora\n");
@@ -30,10 +31,14 @@ int main()
 	case 1:
 		// Se meanda llamar la funcion suma
 		resultado=suma(a,b);
-		printf("El resultado es igual a : %f",resultado);
+		printf("El resultado es igual a: %f",resultado);
+		
 		break;
 	case 2:
 		// Se meanda llamar la funcion resta
+		resultado=resta(a,b);
+		printf("El resultado es igual a: %f",resultado);
+		
 		break;
 	case 3:
 		// Se meanda llamar la funcion multiplicacion
@@ -53,5 +58,8 @@ int main()
 			{
 				return a + b;
 			}
-
+		float resta(float a, float b)
+			{
+    			return a - b;
+			}
 // Salvador pon el codigo de las funciones multiplicacion, division
