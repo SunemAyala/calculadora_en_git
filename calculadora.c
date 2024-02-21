@@ -2,6 +2,7 @@
 
 int main()
 {
-	printf("Hola Mundo\n");
+	printf("Buenas tardes /n ");
+	printf("tqm");
 	return 0;
 }
